@@ -5,8 +5,17 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:pages="clr-namespace:SolarSystemApp.Pages"
 	xmlns:local="clr-namespace:SolarSystemApp">
-
-    <ShellContent
-        ContentTemplate="{DataTemplate pages:MoonPhasePage}"/>
-
+    <FlyoutItem Icon="moon_b.png" Title="Moon Phase">
+        <ShellContent
+			ContentTemplate="{DataTemplate pages:MoonPhasePage}"/>
+    </FlyoutItem>
+    
+    <FlyoutItem Icon="sun.png" Title="Sunrise">
+        <ShellContent
+		ContentTemplate="{DataTemplate pages:SunrisePage}"/>
+    </FlyoutItem>
+    <FlyoutItem Icon="question.png" Title="About">
+        <ShellContent
+		ContentTemplate="{DataTemplate pages:AboutPage}"/>
+    </FlyoutItem>
 </Shell>
